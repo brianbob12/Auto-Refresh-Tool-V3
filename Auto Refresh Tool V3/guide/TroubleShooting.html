@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Auto Refresh Tool Guide</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="topBar">
+			<a href="Guide To Use.html"><div class="barBox">Home</div></a>
+			<a href="HowToUse.html"><div class="barBox">How To Use</div></a>
+			<a href="TroubleShooting.html"><div class="barBox"  id="selected">Troubleshooting</div></a>
+			<a href="Installation.html"><div class="barBox">Installation</div></a>
+		</div>
+		<h2>unexpected crash or program won't start</h2>
+		<p>
+		The most likley cause of a crash is corrupted perameters. In order to fix
+		this open the program folder and run the resetPerameters python file. After
+		this try to re-enter the website information and try again. If the issue
+		persists it is likely due to incorect input data such as incorrect URL.
+		<br><br>
+		This issue could also be cuased by a webpage having no keywords set. This
+		can be fixed by going to the webpage section on the cofiguration tool and
+		removing NULL keywords. NULL keywords are a red rectangle at the side of the
+		screen(as seen below). NULL keywords can be removed by clicking the empty red
+		box and adding a valid keyword to the page.
+		</p>
+		<img src="NullExample.png">
+		<p>
+		An invalid webpage adress is another cuase of a crash. You should test that
+		the webpages are valid by following the links on thier areas in the
+		configuration tool. If you are unable to follow one of the links, delete
+		that webpage by clicking the ,"Remove this webpage" button twice.
+		</p>
+		<img src="badURL.png" id="badURL">
+		<p>
+		An unexpected crash could also occur due to mising files. To ceck that all
+		files are present, open the program and confirm the presence of the following
+		essencial files:
+		<ul>
+			<li>configuration tool -python file</li>
+			<li>curl              - application</li>
+			<li>emails            - text document</li>
+			<li>keywords          - text document</li>
+			<li>main              - python file</li>
+			<li>watchList         - text documet</li>
+		</ul>
+		</p>
+		<br>
+		<br>
+		<p>
+		The crash could possibly be due to a lack of internet connection.
+		</p>
+		<h2>Reciving Emails Too Ofen</h2>
+		<p>
+		This issue is caused by the selected keywords changing constantly between
+		website loads. The keyword and website at fult can be identified in the
+		"keywords:" section of the email. Remove this keyword by navigating to the
+		page for that webpage fromt he main menu and clicking on the red box
+		containing this keyword.
+		</p>
+		<h2>Not Reciving Emails When Webpage Is Updated</h2>
+		<p>
+		This is most likley caused because the keywords are not applicable for this
+		specific page or update. To fix this, more keywods should be added.
+		</p>
+		<h2>Windows prompts with, "how do you what to open this file"</h2>
+		<p>
+		This is caused by the inncorrect installation of python. Refer to the installation guaide <a href="Installation.html">here</a>.
+		</p>
+		<img src="openwith.png">
+	</body>
+</html>
